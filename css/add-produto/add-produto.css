@@ -1,0 +1,15 @@
+.add-produtos {
+    display: grid;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.add-produto {
+    background: var(--cor-11);
+    border: 4px solid var(--cor-p3);
+    width: 500px;
+    padding: 16px;
+    align-self: center;
+    justify-self: center;
+}
+

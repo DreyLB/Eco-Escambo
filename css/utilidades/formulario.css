@@ -1,0 +1,79 @@
+.form {
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.form ul {
+  display: grid;
+  padding: 40px 20px;
+  background-color: var(--cor-12);
+  border: 4px  solid var(--cor-p1);
+  border-radius: 12px;
+  width: 320px;
+}
+
+.form label,
+.login-cadastro a,
+.form li > a {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--cor-p1);
+}
+
+.form label,
+.form span {
+  font: 600 1rem/1.5 "Poppins", sans-serif;
+}
+
+.login-cadastro a,
+.form li > a {
+  font: 400 0.875rem/1.5 "Poppins", sans-serif;
+}
+
+.login-cadastro a:hover,
+.form li > a:hover{
+  color: var(--cor-0);
+}
+
+.form li {
+  margin-bottom: 12px;
+}
+
+.form input[type="password"],
+.form input[type="email"],
+.form input[type="text"] {
+  font: 400 1rem/ 1.5 "Roboto", sans-serif;
+  background: var(--cor-0);
+  border: 1px solid var(--cor-0);
+  padding: 4px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form input[type="password"]:focus,
+.form input[type="email"]:focus {
+  outline: none;
+  border-color: var(--cor-p1);
+  background: var(--cor-0);
+  box-shadow: 0 0 0 2px #fea;
+}
+
+.login-cadastro {
+  margin-top: 16px;
+  border-top: 2px dashed var(--cor-0);
+}
+
+.login-cadastro span,
+.login-cadastro a {
+  margin-top: 12px;
+}
+
+.login-erro {
+  justify-self: center;
+  font: 400 1rem/ 1.5 "Roboto", sans-serif;
+  color: var(--cor-p1);
+}

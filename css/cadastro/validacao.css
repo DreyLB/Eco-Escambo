@@ -1,0 +1,10 @@
+.validacao-bg {
+  background-color: var(--cor-11);
+}
+
+.validacao {
+  display: grid;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}

@@ -1,0 +1,136 @@
+.produtos-lista {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.produtos-lista h2 {
+  margin-bottom: 40px;
+}
+
+.produtos-lista a {
+  display: block;
+}
+
+.produtos-lista img {
+  border-radius: 20px;
+  max-width: 1200px;
+  max-height: 500px;
+}
+
+.produtos-lista ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  margin-top: 40px;
+  row-gap: 20px;
+}
+
+.produtos-lista li {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+}
+
+.produtos-lista li.hidden {
+  display: none;
+}
+
+.produtos-lista a {
+  max-width: max-content;
+}
+
+.produtos-lista img {
+  margin-bottom: 16px;
+  max-width: 280px;
+  height: 160px;
+}
+
+.produtos-lista h3 {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.produtos-lista h3::before {
+  content: "";
+  display: inline-block;
+  background-color: var(--cor-p1);
+  height: 8px;
+  width: 12px;
+  margin-right: 8px;
+  transition: width 0.2s;
+}
+
+.produtos-lista a:hover h3::before {
+  width: 24px;
+}
+
+.produtos-lista li span {
+  padding-left: 20px;
+}
+
+@media (max-width: 800px) {
+  .produtos-lista {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .produtos-lista ul {
+    gap: 20px;
+  }
+}
+
+.carrossel {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.carrossel img {
+  border-radius: 4px;
+}
+
+.carrossel input {
+  display: none;
+}
+
+.slides a {
+  display: none;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation label {
+  width: 50px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 4px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#slide1:checked~.slides .slide:nth-child(1),
+#slide2:checked~.slides .slide:nth-child(2),
+#slide3:checked~.slides .slide:nth-child(3),
+#slide4:checked~.slides .slide:nth-child(4) {
+  display: block;
+}
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
+  align-items: center;
+}
+
+.fundo-imagem {
+  display: grid;
+  justify-items: center;
+  background-color: var(--cor-2);
+  width: 70%;
+  border-radius: 5px;
+}

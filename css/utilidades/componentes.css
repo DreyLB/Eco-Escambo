@@ -1,0 +1,73 @@
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.botao {
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 4px;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  color: #332200;
+  font: 600 1.125rem/ 1.33 "Poppins", sans-serif;
+  max-width: max-content;
+  border: none;
+  cursor: pointer;
+}
+
+.botao.excluir {
+  background: linear-gradient(#e30100, #a70100);
+}
+
+.botao.excluir:hover {
+  background: linear-gradient(#d80100, #b40100);
+}
+
+.botao.aceito {
+  background: linear-gradient(#4bf200, #3ec401);
+}
+
+.botao.aceito:hover {
+  background: linear-gradient(#51fb04, #3b9c0e);
+}
+
+.botao:hover {
+  background: linear-gradient(#ffb60d, var(--cor-p2));
+}
+
+@media (max-width: 600px) {
+  .botao {
+    padding: 12px 16px;
+    font-size: 1rem;
+  }
+}
+
+.titulo-bg {
+  background-color: var(--cor-11);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.titulo p {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+  .titulo-bg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .titulo p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,163 @@
+.meu-produto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  align-items: start;
+}
+
+#meu-produto .titulo p {
+  text-transform: uppercase;
+}
+
+/* Imagens */
+
+.meu-produto-imagens {
+  display: grid;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
+}
+
+.meu-produto-imagens img {
+  min-width: 200px;
+  max-width: 270px;
+  height: 270px;
+  background: var(--cor-9);
+  border-radius: 5px;
+}
+
+/* .meu-produto-imagens img:first-child {
+    min-width: 100%;
+}
+ */
+/* Conteudo */
+
+.meu-produto-conteudo div {
+  padding-bottom: 40px;
+}
+
+.meu-produto-conteudo h2 {
+  padding-top: 40px;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+/* Trocar */
+
+.meu-produto-trocar {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: 8px 12px;
+  margin-bottom: 40px;
+}
+
+.meu-produto-trocar a {
+  grid-row: span 2;
+}
+
+.meu-produto-trocar span {
+  display: flex;
+  align-items: center;
+  background-color: var(--cor-12);
+  padding: 4px 8px;
+  border-radius: 4px;
+  gap: 8px;
+}
+
+@media (max-width: 800px) {
+  .meu-produto {
+    grid-template-columns: 1fr;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .meu-produto-imagens {
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 400px) {
+  .meu-produto-trocar {
+    grid-template-columns: 1fr;
+  }
+}
+
+.meus-produtos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.meus-produtos p,
+.meus-produtos h1 {
+  grid-column: 1;
+}
+
+.meus-produtos a {
+  grid-column: 2;
+  align-self: center;
+  justify-self: end;
+}
+
+.produtos-troca {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.botao-meu-produto {
+  display: grid;
+  justify-items: center;
+  margin-top: 1rem;
+}
+
+.status {
+  position: relative;
+}
+
+.status-simbolo {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: var(--cor-p1);
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.status-simbolo.Aceito {
+  background-color: #4bf200;
+}
+
+.interesse {
+  display: none;
+}
+
+.interesse.analise {
+  display: block;
+}
+
+.interesse.pendente {
+  display: block;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 10px 20px;
+}
+
+.erro {
+  font-weight: bold;
+  color: red;
+}
